@@ -1,0 +1,15 @@
+cluster:
+   auth_token_file: auth-token.json
+   username: admin
+   password: Weka.io123
+   organization: root
+   hosts: vweka05,vweka02,vweka03
+   force_https: True   # only 3.10+ clusters support https
+   verify_cert: False  # default cert cannot be verified
+
+events_log:
+    filename: weka_events.log
+    size_mb: 10
+    num_files: 6
+    minimum_severity: INFO
+    fetch_every_secs: 60
